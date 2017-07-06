@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<datasourcegroup>
+
+  <description>JDBC DataSources</description>
+
+<management-entrytype>TEST</management-entrytype>
+<enable-jta>false</enable-jta>
+  <datasource name="ora10g" default="true">
+      <driver>oracle.jdbc.driver.OracleDriver</driver>
+	  <url>jdbc:oracle:thin:@192.168.0.210:1521:df41</url>
+	  <username>yjzhaccess</username>
+	  <password>yjzhaccess</password>
+  </datasource>
+</datasourcegroup>

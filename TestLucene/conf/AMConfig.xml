@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AMConfig>
+	<CommonConfig>
+		<IndexBase>D:/tmp</IndexBase><!-- 索引根目录 -->
+	</CommonConfig>
+	<Indexers><!-- 索引器配置，支持多个索引器，每个索引器对应一个索引文件，增加索引器只需增加一个&lt;entry&gt;项即可 -->
+		<entry>
+			<IndexerName>poi1</IndexerName><!--1 lcd-->
+			<IndexerConfig><!-- 索引器配置 -->
+				<IndexName>poi1</IndexName>
+				<AnalyzerClass>com.chenlb.mmseg4j.analysis.ComplexAnalyzer</AnalyzerClass>
+				<BreakPoint>d:/tmp/poi1.bp</BreakPoint>
+				<DataSource></DataSource>
+				<FullSelectSql>select t.id pid, t.mc addr,t.ssqx code,t.point_x pos_x,t.point_y pos_y from poi1 t where t.ssqx is not null</FullSelectSql>
+				<IncrementSelectSql></IncrementSelectSql>
+				<PKFieldName>pid</PKFieldName>
+				<IndexFiledName>addr</IndexFiledName>
+				<DataFiledName>pos_x,pos_y,code</DataFiledName>
+			</IndexerConfig>
+		</entry>
+		<entry>
+			<IndexerName>daolu1</IndexerName><!--1 lcd-->
+			<IndexerConfig><!-- 索引器配置 -->
+				<IndexName>daolu1</IndexName>
+				<AnalyzerClass>com.chenlb.mmseg4j.analysis.ComplexAnalyzer</AnalyzerClass>
+				<BreakPoint>d:/tmp/daolu1.bp</BreakPoint>
+				<DataSource></DataSource>
+				<FullSelectSql>select t.id pid, t.mc addr,t.ssqx code,t.point_x pos_x,t.point_y pos_y from daolu1 t where t.ssqx is not null</FullSelectSql>
+				<IncrementSelectSql></IncrementSelectSql>
+				<PKFieldName>pid</PKFieldName>
+				<IndexFiledName>addr</IndexFiledName>
+				<DataFiledName>pos_x,pos_y,code</DataFiledName>
+			</IndexerConfig>
+		</entry>
+		<entry>
+			<IndexerName>daolu2</IndexerName><!--1 lcd-->
+			<IndexerConfig><!-- 索引器配置 -->
+				<IndexName>daolu2</IndexName>
+				<AnalyzerClass>com.chenlb.mmseg4j.analysis.ComplexAnalyzer</AnalyzerClass>
+				<BreakPoint>d:/tmp/daolu1.bp</BreakPoint>
+				<DataSource></DataSource>
+				<FullSelectSql>select t.id pid, t.mc addr,t.ssqx code,t.point_x pos_x,t.point_y pos_y from daolu1 t where t.ssqx is not null</FullSelectSql>
+				<IncrementSelectSql></IncrementSelectSql>
+				<PKFieldName>pid</PKFieldName>
+				<IndexFiledName>addr</IndexFiledName>
+				<DataFiledName>pos_x,pos_y,code</DataFiledName>
+			</IndexerConfig>
+		</entry>
+		<entry>
+			<IndexerName>jhglz1</IndexerName><!--1 lcd-->
+			<IndexerConfig><!-- 索引器配置 -->
+				<IndexName>jhglz1</IndexName>
+				<AnalyzerClass>com.chenlb.mmseg4j.analysis.ComplexAnalyzer</AnalyzerClass>
+				<BreakPoint>d:/tmp/jhglz1.bp</BreakPoint>
+				<DataSource></DataSource>
+				<FullSelectSql>select t.id pid, t.name addr,t.ssqx code,t.point_x pos_x,t.point_y pos_y from jhglz t where name like '%高速%' and name not like '%K%'</FullSelectSql>
+				<IncrementSelectSql></IncrementSelectSql>
+				<PKFieldName>pid</PKFieldName>
+				<IndexFiledName>addr</IndexFiledName>
+				<DataFiledName>pos_x,pos_y,code</DataFiledName>
+			</IndexerConfig>
+		</entry>
+		<entry>
+			<IndexerName>jhglz2</IndexerName><!--1 lcd-->
+			<IndexerConfig><!-- 索引器配置 -->
+				<IndexName>jhglz2</IndexName>
+				<AnalyzerClass>com.chenlb.mmseg4j.analysis.ComplexAnalyzer</AnalyzerClass>
+				<BreakPoint>d:/tmp/jhglz2.bp</BreakPoint>
+				<DataSource></DataSource>
+				<FullSelectSql>select t.id pid, t.mc addr,t.ssqx code,t.point_x pos_x,t.point_y pos_y from daolu2 t where t.ssqx is not null</FullSelectSql>
+				<IncrementSelectSql></IncrementSelectSql>
+				<PKFieldName>pid</PKFieldName>
+				<IndexFiledName>addr</IndexFiledName>
+				<DataFiledName>pos_x,pos_y,code</DataFiledName>
+			</IndexerConfig>
+		</entry>
+		<entry>
+			<IndexerName>jhglz3</IndexerName><!--1 daolu1-->
+			<IndexerConfig><!-- 索引器配置 -->
+				<IndexName>jhglz3</IndexName>
+				<AnalyzerClass>com.chenlb.mmseg4j.analysis.ComplexAnalyzer</AnalyzerClass>
+				<BreakPoint>d:/tmp/jhglz3.bp</BreakPoint>
+				<DataSource></DataSource>
+				<FullSelectSql>select t.id pid, t.mc addr,t.ssqx code,t.point_x pos_x,t.point_y pos_y from poi1 t where t.ssqx is not null</FullSelectSql>
+				<IncrementSelectSql></IncrementSelectSql>
+				<PKFieldName>pid</PKFieldName>
+				<IndexFiledName>addr</IndexFiledName>
+				<DataFiledName>pos_x,pos_y,code</DataFiledName>
+			</IndexerConfig>
+		</entry>
+		<entry>
+			<IndexerName>jhglz4</IndexerName><!--1 poi2-->
+			<IndexerConfig><!-- 索引器配置 -->
+				<IndexName>jhglz4</IndexName>
+				<AnalyzerClass>com.chenlb.mmseg4j.analysis.ComplexAnalyzer</AnalyzerClass>
+				<BreakPoint>d:/tmp/jhglz4.bp</BreakPoint>
+				<DataSource></DataSource>
+				<FullSelectSql>select t.id pid, t.mc addr,t.ssqx code,t.point_x pos_x,t.point_y pos_y from poi2 t where t.ssqx is not null</FullSelectSql>
+				<IncrementSelectSql></IncrementSelectSql>
+				<PKFieldName>pid</PKFieldName>
+				<IndexFiledName>addr</IndexFiledName>
+				<DataFiledName>pos_x,pos_y,code</DataFiledName>
+			</IndexerConfig>
+		</entry>
+	</Indexers>
+</AMConfig>
